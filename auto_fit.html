@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+<html>
+    <head>
 <title>Auto Fill</title>
+</head>
     <style>
         .grid {
             display: grid;
@@ -14,17 +17,22 @@
             text-align: center;
         }
         .auto-fill {
-            grid-template-columns: repeat(auto-fill, minimax(150px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         }
         .auto-fit {
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         }
     </style>
+    <body>
     <div class="grid auto-fill">
         <div>1</div>
         <div>2</div>
+        <div>3</div>
     </div>
     <div class="grid auto-fit">
         <div>1</div>
         <div>2</div>
+        <div>3</div>
     </div>
+</body>
+</html>
